@@ -6,7 +6,6 @@ public class ManajemenCafe {
     static String[] namaMenu = {"Kopi Hitam", "Latte", "Teh Tarik", "Mie Goreng"};
     static int[] hargaMenu = {15000, 22000, 12000, 18000};
     static int [] nomorMeja = new int[100];
-    static String[] menuDipilih = new String[100];
     static int[] jumlahItem = new int[100];
     static double[] totalHarga = new double[100];
     static int jumlahPesanan = 0;
@@ -72,7 +71,7 @@ public class ManajemenCafe {
                 System.out.println("Jumlah item harus lebih dari 0. Silakan pilih lagi.");
                 continue;
             }
-            
+
             double hargaMenuDipilih = hargaMenu[pilihanMenu - 1];
             totalPesanan += jumlah * hargaMenuDipilih;
         }
@@ -82,7 +81,6 @@ public class ManajemenCafe {
     }
     
     static void tampilkanDaftarPesanan(){
-
     }
 
 }
